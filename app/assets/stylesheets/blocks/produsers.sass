@@ -1,0 +1,37 @@
+.producers
+	list-style-type: none
+	list-style-position: outside
+
+.producers__col
+	display: inline-block
+	margin: 0
+	vertical-align: top
+	width: 224px
+
+.producers__list
+	list-style-type: none
+
+.producers__list_item
+	text-align: left
+
+	&:first-child .producers__title
+		font-family: "HelveticaNeue Bold", "RobotoBold"
+
+	&:last-child .producers__title
+		font-family: "HelveticaNeue Medium", "RobotoMedium"
+		color: #25afd9
+
+.producers__title
+	text-decoration: none
+	font-size: 16px
+	line-height: 32px
+	font-family: 'HelveticaNeue Light' ,'RobotoLight'
+	color: #86949e
+	border-bottom: solid 1px transparent
+	transition: all .2s
+
+	&:hover
+		border-bottom: #86949e 1px solid
+
+.producers__list_item:last-child .producers__title:hover
+	border-color: #25afd9
