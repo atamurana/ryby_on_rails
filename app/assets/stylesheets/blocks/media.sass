@@ -1,0 +1,75 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.questions 
+		.questions__text_block
+			text-align: left
+			width: 40%
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.mnu
+		.mnu__item
+			padding-right: 35px
+
+@media only screen and (max-width : 900px)
+	.devices
+		.devices__stickers
+			width: 100%
+		.devices__text_block
+			width: 100%
+			text-align: center
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.mnu
+		.mnu__item
+			display: block
+			padding: 0
+			width: 150px
+			margin: 0 auto
+
+
+@media only screen and (max-width : 600px)
+	.devices
+		.devices__stickers
+			width: 70%
+			margin: 0 15%
+	.questions 
+		.questions__text_block
+			width: 100%
+			margin: 0 auto
+			&:nth-child(2n)
+				clear: both
+				float: none
+				padding-left: 0
+				padding-right: 0
+			&:nth-child(2n+1)
+				float: none
+				padding-left: 0
+				padding-right: 0
+	.questions
+		.questions__content
+			&:before
+				width: 0
+	.questions
+		&:nth-child(1), &:nth-child(2)
+			padding-top: 20px
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.mnu
+		clear: both
+	.devices
+		.devices__device
+			display: block
+			margin: 0 auto 40px
+	.remote
+		.remote_item
+			margin-right: 0
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	
