@@ -1,27 +1,27 @@
 footer.footer
-	.container
-		.row
-			.footer__content
-				ul.mnu.footer__mnu
-					li.mnu__item
-						a.mnu__link href="welcome/about_us" about us
-					li.mnu__item
-						a.mnu__link href="welcome/careers" careers
-					li.mnu__item
-						a.mnu__link href="welcome/order_status" order status
-					li.mnu__item
-						a.mnu__link href="welcome/legal" Legal
-				form.subscribe_form.footer__subscribe_form action=""
-					p.subscribe_form__subscribe
-						input.subscribe_form__text type="text" placeholder="Sign Up for Ray Newsletters"
-						input.subscribe_form__submit type="submit" value="Subscribe"
-				ul.social.footer__social
-					li.social__item
-						a.social__link href="#"
-					li.social__item
-						a.social__link href="#"
-					li.social__item
-						a.social__link href="#"
-					li.social__item
-						a.social__link href="#"
-				p.copiraight &copy; 2014-2015 Ray Enterprises Inc. All rights reserved.
+  .container
+    .row
+      .footer__content
+        ul.mnu.footer__mnu
+          li.mnu__item
+            = link_to "about_us", welcome_about_us_path, class: "mnu__link"
+          li.mnu__item
+            = link_to "careers", welcome_careers_path, class: "mnu__link"
+          li.mnu__item
+            = link_to "order_status", welcome_order_status_path, class: "mnu__link"
+          li.mnu__item
+            = link_to "legal", welcome_legal_path, class: "mnu__link"
+        form.subscribe_form.footer__subscribe_form action=""
+          p.subscribe_form__subscribe
+            input.subscribe_form__text type="text" placeholder="Sign Up for Ray Newsletters"
+            input.subscribe_form__submit type="submit" value="Subscribe"
+        ul.social.footer__social
+          li.social__item
+            a.social__link href="#"
+          li.social__item
+            a.social__link href="#"
+          li.social__item
+            a.social__link href="#"
+          li.social__item
+            a.social__link href="#"
+        p.copiraight &copy; 2014-2015 Ray Enterprises Inc. All rights reserved.
